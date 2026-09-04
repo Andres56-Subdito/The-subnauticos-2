@@ -4,6 +4,28 @@ Este sitio web reúne y presenta los proyectos de todos los integrantes de nuest
 
 ## Acuerdos de diseño (A completar en el Paso 2)
 - Paleta de colores:
+| Hex | RGB |
+
+| :--- | :--- |
+
+| `#512b2a` | (81,43,42) |
+
+| `#2c875b` | (44,135,91) |
+
+| `#954e3a` | (149,78,58) |
+
+| `#726962` | (114,105,98) |
+
+| `#aaaaaa` | (170,170,170) |
+
+
+
+\*Tabla hecha con la ayuda de gemini
+
+
 - Tipografía:
+Comfortaa Mediana
+
+
 - Estructura visual:
 - Nombres de clases CSS:
