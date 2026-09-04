@@ -32,3 +32,9 @@ Comfortaa Mediana
 - Estructura visual: Nombre en parte superior, Fotografia en parte central y descripción y redes sociales en parte inferior.
 
 - Nombres de clases CSS:
+.tarjeta-proyecto: Contenedor principal de la sección individual.
+.titulo-proyecto: Título de la tarjeta.
+.descripcion-proyecto: Texto descriptivo.
+.contenedor-tecnologias: Bloque para agrupar etiquetas.
+.etiqueta-tecnologia: Cada badge de tecnología.
+.boton-proyecto: Botón o enlace al repositorio.
