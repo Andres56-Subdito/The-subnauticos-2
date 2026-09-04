@@ -4,6 +4,7 @@ Este sitio web reúne y presenta los proyectos de todos los integrantes de nuest
 
 ## Acuerdos de diseño (A completar en el Paso 2)
 - Paleta de colores:
+
 | Hex | RGB |
 
 | :--- | :--- |
@@ -28,5 +29,6 @@ Este sitio web reúne y presenta los proyectos de todos los integrantes de nuest
 Comfortaa Mediana
 
 
-- Estructura visual:
+- Estructura visual: Nombre en parte superior, Fotografia en parte central y descripción y redes sociales en parte inferior.
+
 - Nombres de clases CSS:
