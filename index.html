@@ -1,69 +1,181 @@
-<article class="tarjeta-proyecto">
-  <header class="tarjeta-cabecera">
-    <h2 class="tarjeta-titulo">Portafolio de Proyectos del Grupo</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Proyectos del Grupo</title>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&display=swap');
+
+    body {
+      font-family: 'Comfortaa', cursive, sans-serif;
+      background-color: #aaaaaa;
+      color: #726962;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Cabecera blanca superior */
+    .cabecera-sitio {
+      background-color: #ffffff;
+      color: #512b2a;
+      text-align: center;
+      padding: 25px 20px;
+      border-bottom: 4px solid #2c875b;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .cabecera-sitio h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    /* Contenedor principal */
+    .contenedor-principal {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* Estilos acordados para tarjetas */
+    .tarjeta-proyecto {
+      background-color: #ffffff;
+      color: #726962;
+      border: 2px solid #aaaaaa;
+      border-left: 8px solid #2c875b;
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    /* Parte Superior: Nombre / Título */
+    .tarjeta-cabecera {
+      margin-bottom: 15px;
+    }
+    .tarjeta-titulo {
+      color: #512b2a;
+      margin: 0;
+    }
+
+    /* Parte Central: Fotografía */
+    .tarjeta-cuerpo {
+      margin: 15px 0;
+    }
+    .tarjeta-imagen {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #954e3a;
+      margin: 15px auto;
+      display: block;
+    }
+
+    /* Parte Inferior: Descripción y Tecnologías */
+    .tarjeta-descripcion {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin: 15px 0;
+    }
+    .tarjeta-tech {
+      font-size: 0.85rem;
+      color: #512b2a;
+    }
+
+    /* Parte Inferior: Redes / Enlaces */
+    .tarjeta-pie {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .tarjeta-enlace {
+      display: inline-block;
+      background-color: #954e3a;
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .tarjeta-enlace:hover {
+      background-color: #2c875b;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Pie de página con contactos */
+    .pie-sitio {
+      background-color: #512b2a;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .pie-sitio p {
+      margin: 5px 0;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+<!-- Se hace uso de google gemini para reestructurar la pagina por complicaciones en la logica y diseño -->
+  <!-- Cabecera limpia blanca con solo el título -->
+  <header class="cabecera-sitio">
+    <h1>Portafolio de Proyectos del Grupo</h1>
   </header>
-  <div class="tarjeta-cuerpo">
-    <p class="tarjeta-descripcion">
-      Este sitio web reúne y presenta los proyectos de todos los integrantes de nuestro equipo. Fue construido de forma colaborativa utilizando Git y GitHub como parte del Laboratorio 1 de Programación de Aplicaciones.
-    </p>
-    <p class="tarjeta-tech"><strong>Tecnologías usadas:</strong> HTML5, CSS3, Git, GitHub</p>
-  </div>
-  <footer class="tarjeta-pie">
-    <a href="https://github.com" class="tarjeta-enlace" target="_blank">Ver Proyecto</a>
+
+  <main class="contenedor-principal">
+
+    <!-- Tarjeta General del Grupo -->
+    <article class="tarjeta-proyecto">
+      <header class="tarjeta-cabecera">
+        <h2 class="tarjeta-titulo">Portafolio de Proyectos del Grupo</h2>
+      </header>
+      <div class="tarjeta-cuerpo">
+        <p class="tarjeta-descripcion">
+          Este sitio web reúne y presenta los proyectos de todos los integrantes de nuestro equipo. Fue construido de forma colaborativa utilizando Git y GitHub como parte del Laboratorio 1 de Programación de Aplicaciones.
+        </p>
+        <p class="tarjeta-tech"><strong>Tecnologías usadas:</strong> HTML5, CSS3, Git, GitHub</p>
+      </div>
+      <footer class="tarjeta-pie">
+        <a href="https://github.com" class="tarjeta-enlace" target="_blank">Ver Proyecto</a>
+      </footer>
+    </article>
+
+    <!-- Tarjeta de Desarrolladores (Estructura: Nombre -> Foto -> Descripción -> Redes) -->
+    <article class="tarjeta-proyecto">
+      <!-- 1. PARTE SUPERIOR: Nombre -->
+      <header class="tarjeta-cabecera">
+        <h2 class="tarjeta-titulo">- Desarrolladores -</h2>
+      </header>
+
+      <!-- 2. PARTE CENTRAL: Fotografía -->
+      <div class="tarjeta-cuerpo">
+        <img src="https://via.placeholder.com/150" alt="Fotografía del equipo" class="tarjeta-imagen">
+        
+        <!-- 3. PARTE INFERIOR: Descripción -->
+        <p class="tarjeta-descripcion">
+          Esta pagina a sido creada con el apoyo y trabajo de los desarrolladores Mario yañez, Dilan Hernandez y Lucas campos
+        </p>
+        <p class="tarjeta-tech"><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Git</p>
+      </div>
+
+      <!-- 3. PARTE INFERIOR: Redes Sociales / Enlace -->
+      <footer class="tarjeta-pie">
+        <a href="https://github.com/Andres56-Subdito/The-subnauticos-2" class="tarjeta-enlace" target="_blank">El GitHub</a>
+      </footer>
+    </article>
+
+  </main>
+
+  <!-- Pie de página con números de contacto -->
+  <footer class="pie-sitio">
+    <p><strong>Contactos del Equipo:</strong></p>
+    <p>Mario Yañez: +56 9 1234 5678 | Dilan Hernandez: +56 9 8765 4321 | Lucas Campos: +56 9 1122 3344</p>
   </footer>
-</article>
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&display=swap');
-
-  .tarjeta-proyecto {
-    font-family: 'Comfortaa', cursive, sans-serif;
-    background-color: #512b2a;
-    color: #ffffff;
-    border-left: 6px solid #2c875b;
-  }
-  .tarjeta-titulo {
-    color: #aaaaaa;
-  }
-  .tarjeta-enlace {
-    background-color: #954e3a;
-    color: #ffffff;
-  }
-</style>
-
-<article class="tarjeta-proyecto">
-  <!-- Contenido previo -->
-</article>
-
-.tarjeta-proyecto {
-  font-family: 'Comfortaa', cursive, sans-serif;
-  background-color: #ffffff;
-  color: #726962;
-  border: 2px solid #aaaaaa;
-  border-left: 8px solid #2c875b;
-  border-radius: 8px;
-  padding: 24px;
-  margin: 20px 0;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.tarjeta-titulo {
-  color: #512b2a;
-  margin-top: 0;
-}
-.tarjeta-descripcion {
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-.tarjeta-enlace {
-  display: inline-block;
-  background-color: #954e3a;
-  color: #ffffff;
-  padding: 10px 18px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.tarjeta-enlace:hover {
-  background-color: #2c875b;
-  transition: background-color 0.3s ease;
-}
+</body>
+</html>

@@ -33,16 +33,19 @@ Comfortaa Mediana
 
 - Nombres de clases CSS:
 
-.tarjeta-proyecto: Contenedor principal de la sección individual.
+.tarjeta-proyecto: Contenedor principal de la tarjeta individual.
 
-.titulo-proyecto: Título de la tarjeta.
+.tarjeta-cabecera: Encabezado superior de la tarjeta.
 
-.descripcion-proyecto: Texto descriptivo.
+.tarjeta-titulo: Título principal del proyecto o integrante.
 
-.contenedor-tecnologias: Bloque para agrupar etiquetas.
+.tarjeta-cuerpo: Bloque central para el contenido y descripción.
 
-.etiqueta-tecnologia: Cada badge de tecnología.
+.tarjeta-descripcion: Texto descriptivo del proyecto o integrante.
 
-.boton-proyecto: Botón o enlace al repositorio.
+.tarjeta-tech: Bloque para mostrar las tecnologías utilizadas.
 
+.tarjeta-pie: Sección inferior para enlaces y redes sociales.
+
+.tarjeta-enlace: Botón o enlace hacia el proyecto o perfil (GitHub/redes).
 
