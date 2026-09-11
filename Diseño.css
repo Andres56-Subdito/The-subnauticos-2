@@ -152,6 +152,8 @@ body {
 .pie-sitio {
   background-color: var(--color-primario);
   color: var(--color-blanco);
+  text-align: center;
+  padding: 20px;
 }
 
 .pie-sitio p {
