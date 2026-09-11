@@ -150,11 +150,16 @@ body {
 
 /* Bloque 1: Pie de página general */
 .pie-sitio {
-  /* definir */
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 .pie-sitio p {
-  /* definir */
+  margin: 5px 0;
+  font-size: 0.85rem;
 }
 
 /* Bloque 2: Sección de compañero / adicional */
