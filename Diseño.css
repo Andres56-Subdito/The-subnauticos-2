@@ -17,24 +17,36 @@ body {
   margin: 0;
   padding: 0;
   
-  /* Implementación de Grid para layout principal */
+  /* Layout principal en Grid */
   display: grid;
-  grid-template-rows: auto 1fr auto; /* Header, Contenido adaptable, Footer */
-  min-height: 100vh;                 /* Asegura que el footer se quede al fondo */
+  grid-template-rows: auto 1fr auto; /* Header, Contenido, Footer */
+  min-height: 100vh;                 /* Mantiene el footer al fondo */
 }
 
 /* Cabecera del sitio */
 .cabecera-sitio {
-  /*definir*/
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid var(--color-exito);
 }
 
 .cabecera-sitio h1 {
-  /*definir*/
+  margin: 0;
+  color: var(--color-blanco);
 }
 
-/* 2. Rejilla para los Proyectos (Grid Horizontal) */
+/* 2. Rejilla para los Proyectos (Grid Horizontal Responsive) */
 .contenedor-principal {
-  /*definir*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Tarjetas de Proyectos */
@@ -47,7 +59,7 @@ body {
   padding: 24px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 0; /* Se elimina margin-bottom porque usamos 'gap' en el contenedor */
+  margin: 0;
 }
 
 /* Partes de la Tarjeta */
@@ -65,7 +77,10 @@ body {
 }
 
 .tarjeta-imagen {
-  /*definir*/
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
 }
 
 .tarjeta-descripcion {
@@ -79,7 +94,7 @@ body {
   color: var(--color-primario);
 }
 
-/* Flexbox mantenido para elementos internos en 1D (Botones/Enlaces) */
+/* Flexbox para botones/enlaces */
 .tarjeta-pie {
   margin-top: 20px;
   display: flex;
@@ -104,11 +119,69 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* Pie de página */
+/* Sección Mario (Integrada como tarjeta o sección independiente) */
+#seccion-mario, .seccion-mario {
+  padding: 20px;
+  border: 2px solid var(--color-primario);
+  border-radius: 12px;
+  background-color: var(--color-blanco);
+  color: var(--color-texto);
+}
+
+#seccion-mario h2 {
+  font-family: var(--fuente-principal);
+  color: var(--color-primario);
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-acento);
+}
+
+#seccion-mario p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Bloque 1: Pie de página general completado */
 .pie-sitio {
-  /*definir*/
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 .pie-sitio p {
-  /*definir*/
+  margin: 5px 0;
+  font-size: 0.85rem;
+}
+
+/* Bloque 2: Sección de compañero / adicional completado */
+#seccion-integrante, .seccion-integrante {
+
+}
+
+#seccion-integrante h2 {
+ /*definir*/
+}
+
+#seccion-integrante p {
+ /*definir*/
+}
+
+/* ==============================================
+   MEDIA QUERY: Adaptación a pantallas angostas (< 600px)
+   ============================================== */
+@media (max-width: 600px) {
+  .contenedor-principal {
+    /* Fuerza a apilar todas las tarjetas en 1 sola columna */
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  .cabecera-sitio h1 {
+    font-size: 1.4rem;
+  }
 }
