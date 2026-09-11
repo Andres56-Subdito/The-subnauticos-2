@@ -154,6 +154,7 @@ body {
   color: var(--color-blanco);
   text-align: center;
   padding: 20px;
+  margin-top: 40px;
 }
 
 .pie-sitio p {
