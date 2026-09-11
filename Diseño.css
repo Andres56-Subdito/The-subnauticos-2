@@ -9,16 +9,33 @@
   --fuente-principal: 'Comfortaa', cursive, sans-serif;
 }
 
-/* Estilos Generales */
+/* 1. Estructura General del Sitio (Grid Vertical) */
 body {
   font-family: var(--fuente-principal);
   background-color: var(--color-fondo);
   color: var(--color-texto);
   margin: 0;
   padding: 0;
+  
+  /* Implementación de Grid para layout principal */
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, Contenido adaptable, Footer */
+  min-height: 100vh;                 /* Asegura que el footer se quede al fondo */
 }
 
+/* Cabecera del sitio */
+.cabecera-sitio {
+  /*definir*/
+}
 
+.cabecera-sitio h1 {
+  /*definir*/
+}
+
+/* 2. Rejilla para los Proyectos (Grid Horizontal) */
+.contenedor-principal {
+  /*definir*/
+}
 
 /* Tarjetas de Proyectos */
 .tarjeta-proyecto, .card {
@@ -28,9 +45,9 @@ body {
   border-left: 8px solid var(--color-exito);
   border-radius: 8px;
   padding: 24px;
-  margin-bottom: 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin: 0; /* Se elimina margin-bottom porque usamos 'gap' en el contenedor */
 }
 
 /* Partes de la Tarjeta */
@@ -47,7 +64,9 @@ body {
   margin: 15px 0;
 }
 
-
+.tarjeta-imagen {
+  /*definir*/
+}
 
 .tarjeta-descripcion {
   font-size: 0.95rem;
@@ -60,6 +79,7 @@ body {
   color: var(--color-primario);
 }
 
+/* Flexbox mantenido para elementos internos en 1D (Botones/Enlaces) */
 .tarjeta-pie {
   margin-top: 20px;
   display: flex;
@@ -84,3 +104,11 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* Pie de página */
+.pie-sitio {
+  /*definir*/
+}
+
+.pie-sitio p {
+  /*definir*/
+}
