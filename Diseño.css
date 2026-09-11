@@ -1,0 +1,86 @@
+/* Variables globales del equipo */
+:root {
+  --color-fondo: #aaaaaa;
+  --color-texto: #726962;
+  --color-primario: #512b2a;
+  --color-acento: #954e3a;
+  --color-exito: #2c875b;
+  --color-blanco: #ffffff;
+  --fuente-principal: 'Comfortaa', cursive, sans-serif;
+}
+
+/* Estilos Generales */
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Tarjetas de Proyectos */
+.tarjeta-proyecto, .card {
+  background-color: var(--color-blanco);
+  color: var(--color-texto);
+  border: 2px solid var(--color-fondo);
+  border-left: 8px solid var(--color-exito);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Partes de la Tarjeta */
+.tarjeta-cabecera {
+  margin-bottom: 15px;
+}
+
+.tarjeta-titulo, .card-header h2 {
+  color: var(--color-primario);
+  margin: 0;
+}
+
+.tarjeta-cuerpo, .card-body {
+  margin: 15px 0;
+}
+
+
+
+.tarjeta-descripcion {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+.tarjeta-tech {
+  font-size: 0.85rem;
+  color: var(--color-primario);
+}
+
+.tarjeta-pie {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Enlaces y Botones */
+.tarjeta-enlace, .card-body a {
+  display: inline-block;
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tarjeta-enlace:hover, .card-body a:hover {
+  background-color: var(--color-exito);
+  transition: background-color 0.3s ease;
+}
+
