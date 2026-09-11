@@ -158,7 +158,8 @@ body {
 }
 
 .pie-sitio p {
-  /* definir */
+  margin: 5px 0;
+  font-size: 0.85rem;
 }
 
 /* Bloque 2: Sección de compañero / adicional */
