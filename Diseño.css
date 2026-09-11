@@ -151,6 +151,7 @@ body {
 /* Bloque 1: Pie de página general */
 .pie-sitio {
   background-color: var(--color-primario);
+  color: var(--color-blanco);
 }
 
 .pie-sitio p {
