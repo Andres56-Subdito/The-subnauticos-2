@@ -19,3 +19,22 @@ const numLikesMario = document.querySelector('#num-likes-mario');
 
 // Badge de estado del proyecto
 const badgeEstadoMario = document.querySelector('#badge-estado-mario');
+
+// ============================================================
+// COMMIT 4 (mario): Agrego addEventListener a cada elemento
+// ============================================================
+
+// Evento click: muestra/oculta detalles del proyecto
+if (btnDetallesMario) {
+  btnDetallesMario.addEventListener('click', mostrarDetallesMario);
+}
+
+// Evento click: da o quita like al proyecto
+if (btnLikeMario) {
+  btnLikeMario.addEventListener('click', toggleLikeMario);
+}
+
+// Evento click: cambia el badge de estado del proyecto
+if (badgeEstadoMario) {
+  badgeEstadoMario.addEventListener('click', cambiarEstadoMario);
+}
