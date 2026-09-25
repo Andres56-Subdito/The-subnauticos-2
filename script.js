@@ -45,6 +45,10 @@ if (tarjetaDilan) {
 if (btnVerMasLucas) {
   btnVerMasLucas.addEventListener('click', verMasLucas);
 }
+// listener nuevo boton
+if (btnExtraLucas) {
+  btnExtraLucas.addEventListener('click', funcionBotonExtraLucas);
+}
 
 // ============================================================
 // COMMIT 4: Funcion de modo oscuro (funcion compartida del equipo)
@@ -104,4 +108,8 @@ function verMasLucas() {
       btnVerMasLucas.textContent = 'Ver menos';
     }
   }
+}
+
+function funcionBotonExtraLucas() {
+  alert('boton');
 }
