@@ -150,7 +150,12 @@ body {
 
 /* Bloque 1: Pie de página general */
 .pie-sitio {
-  /* definir */
+  background-color: #512b2a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+
 }
 
 .pie-sitio p {
