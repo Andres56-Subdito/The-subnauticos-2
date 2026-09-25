@@ -18,6 +18,8 @@ const tarjetaDilan = document.querySelector('#seccion-dilan');
 // Elemento seccion Lucas: boton "Ver mas"
 const btnVerMasLucas = document.querySelector('#btn-ver-mas-lucas');
 const textoExtraLucas = document.querySelector('#texto-extra-lucas');
+// nuevo boton
+const btnExtraLucas = document.querySelector('#btn-extra-lucas');
 
 // ============================================================
 // COMMIT 3: Agrego addEventListener a cada elemento
