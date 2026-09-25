@@ -144,11 +144,6 @@ body {
   margin-bottom: 15px;
 }
 
-/* ==============================================
-   BLOQUES PARA COMPLETAR
-   ============================================== */
-
-/* Bloque 1: Pie de página general */
 .pie-sitio {
   background-color: #512b2a;
   color: #ffffff;
@@ -159,18 +154,6 @@ body {
 }
 
 .pie-sitio p {
-  /* definir */
-}
-
-/* Bloque 2: Sección de compañero / adicional */
-#seccion-integrante, .seccion-integrante {
-  /* definir */
-}
-
-#seccion-integrante h2 {
-  /* definir */
-}
-
-#seccion-integrante p {
-  /* definir */
+  margin: 5px 0;
+  font-size: 0.85rem;
 }
