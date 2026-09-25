@@ -9,6 +9,19 @@
   --fuente-principal: 'Comfortaa', cursive, sans-serif;
 }
 
+body.modo-oscuro {
+  --color-fondo: #1e252b;
+  --color-texto: #e8edf0;
+  --color-primario: #10161b;
+  --color-acento: #c56b4f;
+  --color-exito: #4ca879;
+  --color-blanco: #2d373e;
+}
+
+.oculto {
+  display: none;
+}
+
 /* 1. Estructura General del Sitio (Grid Vertical) */
 body {
   font-family: var(--fuente-principal);
@@ -34,6 +47,22 @@ body {
 .cabecera-sitio h1 {
   margin: 0;
   color: var(--color-blanco);
+}
+
+.boton-tema {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: 2px solid var(--color-blanco);
+  border-radius: 6px;
+  background-color: transparent;
+  color: var(--color-blanco);
+  cursor: pointer;
+  font: inherit;
+  font-weight: bold;
+}
+
+.boton-tema:hover {
+  background-color: var(--color-acento);
 }
 
 /* 2. Rejilla para los Proyectos (Grid Horizontal Responsive) */
