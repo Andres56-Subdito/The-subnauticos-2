@@ -43,3 +43,18 @@ if (tarjetaDilan) {
 if (btnVerMasLucas) {
   btnVerMasLucas.addEventListener('click', verMasLucas);
 }
+
+// ============================================================
+// COMMIT 4: Función de modo oscuro (función compartida del equipo)
+// Activa/desactiva un modo oscuro en todo el sitio mediante
+// classList.toggle sobre el body
+// ============================================================
+function modoOscuro() {
+  document.body.classList.toggle('modo-oscuro');
+  // Cambia el texto del botón según el estado
+  if (document.body.classList.contains('modo-oscuro')) {
+    btnModoOscuro.textContent = '☀️ Modo Claro';
+  } else {
+    btnModoOscuro.textContent = '🌙 Modo Oscuro';
+  }
+}
