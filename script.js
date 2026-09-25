@@ -111,5 +111,5 @@ function verMasLucas() {
 }
 
 function funcionBotonExtraLucas() {
-  alert('boton');
+  alert('se me acabo el tiempo, la idea del boton era cambiar los colores del bloque');
 }
