@@ -29,6 +29,8 @@
       <header class="tarjeta-cabecera">
         <h2 class="tarjeta-titulo">🤖 Robot Laberinto Autonomo</h2>
         <p class="tarjeta-autor">Mario Yanez</p>
+        <!-- Badge de estado del proyecto (interaccion: clic cambia estado) -->
+        <span id="badge-estado-mario" class="badge-estado badge-activo">● Proyecto Activo</span>
       </header>
       
       <div class="tarjeta-cuerpo">
@@ -44,6 +46,12 @@
         </div>
 
         <button id="btn-detalles-mario" class="tarjeta-enlace btn-interactivo">📂 Ver detalles del proyecto</button>
+
+        <!-- Contador de vistas (interaccion: se incrementa al hacer clic en el boton de detalles) -->
+        <p class="contador-vistas">👁 Vistas de detalles: <span id="contador-mario">0</span></p>
+
+        <!-- Boton de like (interaccion: alterna entre Me gusta / Quitar like) -->
+        <button id="btn-like-mario" class="btn-like">❤️ Me gusta <span id="num-likes-mario">0</span></button>
       </div>
 
       <footer class="tarjeta-pie">
