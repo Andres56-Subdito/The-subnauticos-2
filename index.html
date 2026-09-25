@@ -9,24 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&display=swap" rel="stylesheet">
 
-  <!-- Enlace corregido a tu archivo de diseño -->
+  <!-- Enlace corregido, stylesheet -->
   <link rel="stylesheet" href="Diseño.css">
 </head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-        }
-        h1, h2 {
-            color: #004680;
-        }
-        .card {
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+
 <body>
 <!-- Se hace uso de google gemini para reestructurar la pagina por complicaciones en la logica y diseño -->
   <!-- Cabecera limpia blanca con solo el título -->
@@ -36,18 +22,23 @@
 
   <main class="contenedor-principal">
 
-    <section id="seccion-mario">
-    <div class="card">
-        <div class="card-header">
-            <h2>Robot Laberinto Autónomo</h2>
-        </div>
-        <div class="card-body">
-            <p>Auto robotico autonomo desarrollado con lógica difusa y matrices de profundidad para navegación de laberintos.</p>
-            <p><strong>Tecnologías:</strong> C++, Arduino, Lógica Difusa</p>
-            <a href="#">Ver proyecto</a>
-        </div>
-    </div>
-</section>
+    <!-- Tarjeta del Robot Laberinto Autónomo -->
+    <article class="tarjeta-proyecto" id="seccion-mario">
+      <header class="tarjeta-cabecera">
+        <h2 class="tarjeta-titulo">Robot Laberinto Autónomo</h2>
+      </header>
+      
+      <div class="tarjeta-cuerpo">
+        <p class="tarjeta-descripcion">
+          Auto robótico autónomo desarrollado con lógica difusa y matrices de profundidad para navegación de laberintos.
+        </p>
+        <p class="tarjeta-tech"><strong>Tecnologías:</strong> C++, Arduino, Lógica Difusa</p>
+      </div>
+
+      <footer class="tarjeta-pie">
+        <a href="#" class="tarjeta-enlace">Ver Proyecto</a>
+      </footer>
+    </article>
 
     <!-- Tarjeta General del Grupo -->
     <article class="tarjeta-proyecto">
