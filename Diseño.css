@@ -144,16 +144,151 @@ body {
   margin-bottom: 15px;
 }
 
+/* Bloque 1: Pie de pagina general */
 .pie-sitio {
-  background-color: #512b2a;
-  color: #ffffff;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-
+  padding: 25px 20px;
 }
 
 .pie-sitio p {
   margin: 5px 0;
   font-size: 0.85rem;
+}
+
+/* Bloque 2: Seccion de integrante adicional */
+#seccion-integrante, .seccion-integrante {
+  margin: 40px auto;
+  padding: 30px;
+  border: 2px solid var(--color-primario);
+  border-radius: 12px;
+  background-color: var(--color-blanco);
+  color: var(--color-texto);
+  max-width: 900px;
+}
+
+#seccion-integrante h2 {
+  font-family: var(--fuente-principal);
+  color: var(--color-primario);
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-acento);
+}
+
+#seccion-integrante p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* ============================================================
+   LABORATORIO 3: Estilos de interactividad con JavaScript
+   ============================================================ */
+
+/* Boton de modo oscuro en el header */
+.btn-modo-oscuro {
+  margin-top: 12px;
+  padding: 8px 20px;
+  background-color: var(--color-exito);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: var(--fuente-principal);
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-modo-oscuro:hover {
+  background-color: var(--color-acento);
+}
+
+/* Boton interactivo dentro de tarjeta */
+.btn-interactivo {
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  font-family: var(--fuente-principal);
+  font-size: 0.9rem;
+}
+
+/* Clase oculto: elemento no visible */
+.oculto {
+  display: none;
+}
+
+/* Detalles extra en tarjeta */
+.detalles-extra {
+  background-color: #f5f0ee;
+  border-left: 4px solid var(--color-acento);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 12px 0;
+  text-align: left;
+}
+
+.detalles-extra p {
+  margin: 6px 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Autor de la tarjeta */
+.tarjeta-autor {
+  color: var(--color-acento);
+  font-size: 0.9rem;
+  margin: 4px 0 0 0;
+  font-weight: bold;
+}
+
+/* Pista de interaccion */
+.tarjeta-hint {
+  font-size: 0.8rem;
+  color: var(--color-exito);
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* ============================================================
+   MODO OSCURO (activado por JavaScript con classList.toggle)
+   ============================================================ */
+body.modo-oscuro {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+body.modo-oscuro .cabecera-sitio {
+  background-color: #0f0f23;
+  border-bottom: 3px solid var(--color-acento);
+}
+
+body.modo-oscuro .tarjeta-proyecto {
+  background-color: #16213e;
+  color: #e0e0e0;
+  border-color: #444;
+  border-left-color: var(--color-acento);
+}
+
+body.modo-oscuro .tarjeta-titulo {
+  color: #f0a090;
+}
+
+body.modo-oscuro .tarjeta-tech {
+  color: #aaa;
+}
+
+body.modo-oscuro .detalles-extra {
+  background-color: #0d1b2a;
+  color: #ccc;
+}
+
+body.modo-oscuro .pie-sitio {
+  background-color: #0f0f23;
+}
+
+body.modo-oscuro .contenedor-principal {
+  background-color: transparent;
 }
