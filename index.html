@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -16,7 +16,7 @@
 
 <body>
 <!-- Se hace uso de google gemini para reestructurar la pagina por complicaciones en la logica y diseño -->
-  <!-- Cabecera limpia blanca con solo el título -->
+  <!-- Cabecera con titulo y boton de modo oscuro (funcion de equipo) -->
   <header class="cabecera-sitio">
     <h1>Portafolio de Proyectos del Grupo</h1>
     <button type="button" id="btn-tema" class="boton-tema" aria-pressed="false">
@@ -26,17 +26,26 @@
 
   <main class="contenedor-principal">
 
-    <!-- Tarjeta del Robot Laberinto Autónomo -->
+    <!-- Tarjeta MARIO YANEZ - Robot Laberinto Autonomo -->
     <article class="tarjeta-proyecto" id="seccion-mario">
       <header class="tarjeta-cabecera">
-        <h2 class="tarjeta-titulo">Robot Laberinto Autónomo</h2>
+        <h2 class="tarjeta-titulo">🤖 Robot Laberinto Autonomo</h2>
+        <p class="tarjeta-autor">Mario Yanez</p>
       </header>
       
       <div class="tarjeta-cuerpo">
         <p class="tarjeta-descripcion">
-          Auto robótico autónomo desarrollado con lógica difusa y matrices de profundidad para navegación de laberintos.
+          Auto robotico autonomo desarrollado con logica difusa y matrices de profundidad para navegacion de laberintos.
         </p>
-        <p class="tarjeta-tech"><strong>Tecnologías:</strong> C++, Arduino, Lógica Difusa</p>
+        <p class="tarjeta-tech"><strong>Tecnologias:</strong> C++, Arduino, Logica Difusa</p>
+
+        <!-- Detalles extra - ocultos por defecto (interaccion de Mario) -->
+        <div id="detalles-mario" class="oculto detalles-extra">
+          <p>El robot utiliza sensores ultrasonicos para medir distancias en tiempo real y toma decisiones de giro utilizando un sistema de logica difusa implementado en C++.</p>
+          <p>El proyecto fue desarrollado durante el segundo semestre y presentado en la feria de proyectos de la facultad.</p>
+        </div>
+
+        <button id="btn-detalles-mario" class="tarjeta-enlace btn-interactivo">📂 Ver detalles del proyecto</button>
       </div>
 
       <footer class="tarjeta-pie">
@@ -44,36 +53,36 @@
       </footer>
     </article>
 
-    <!-- Tarjeta General del Grupo -->
-    <article class="tarjeta-proyecto">
+    <!-- Tarjeta DILAN HERNANDEZ - (interaccion: hover cambia borde y sombra) -->
+    <article class="tarjeta-proyecto" id="seccion-dilan">
       <header class="tarjeta-cabecera">
-        <h2 class="tarjeta-titulo">The subnauticos 2</h2>
+        <h2 class="tarjeta-titulo">🌐 Aplicacion Web de Inventario</h2>
+        <p class="tarjeta-autor">Dilan Hernandez</p>
       </header>
+
       <div class="tarjeta-cuerpo">
         <p class="tarjeta-descripcion">
-          Este sitio web reúne y presenta los proyectos de todos los integrantes de nuestro equipo. Fue construido de forma colaborativa utilizando Git y GitHub como parte del Laboratorio 1 de Programación de Aplicaciones.
+          Sistema de gestion de inventario desarrollado con HTML, CSS y JavaScript, que permite registrar, editar y eliminar productos desde el navegador.
         </p>
-        <p class="tarjeta-tech"><strong>Tecnologías usadas:</strong> HTML5, CSS3, Git, GitHub</p>
+        <p class="tarjeta-tech"><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript, LocalStorage</p>
+        <p class="tarjeta-hint">💡 Pasa el cursor sobre esta tarjeta para ver el efecto</p>
       </div>
+
       <footer class="tarjeta-pie">
-        <a href="https://github.com/Andres56-Subdito/The-subnauticos-2" class="tarjeta-enlace" target="_blank">Ver Proyecto</a>
+        <a href="#" class="tarjeta-enlace">Ver Proyecto</a>
       </footer>
     </article>
 
-    <!-- Tarjeta de Desarrolladores (Estructura: Nombre -> Foto -> Descripción -> Redes) -->
-    <article class="tarjeta-proyecto">
-      <!-- 1. PARTE SUPERIOR: Nombre -->
+    <!-- Tarjeta LUCAS CAMPOS - (interaccion: boton Ver mas muestra texto extra) -->
+    <article class="tarjeta-proyecto" id="seccion-lucas">
       <header class="tarjeta-cabecera">
-        <h2 class="tarjeta-titulo">- Desarrolladores -</h2>
+        <h2 class="tarjeta-titulo">📊 Dashboard de Estadisticas</h2>
+        <p class="tarjeta-autor">Lucas Campos</p>
       </header>
 
-      <!-- 2. PARTE CENTRAL: Fotografía -->
       <div class="tarjeta-cuerpo">
-        <img src="https://preview.redd.it/new-alterra-logo-v0-qebrs8ztsxbf1.png?width=1024&format=png&auto=webp&s=dec1cc5fd3fe43e7ef2c559e42cf32198d80565e" alt="Fotografía del equipo" class="tarjeta-imagen">
-        
-        <!-- 3. PARTE INFERIOR: Descripción -->
         <p class="tarjeta-descripcion">
-          Esta pagina a sido creada con el apoyo y trabajo de los desarrolladores Mario yañez, Dilan Hernandez y Lucas campos
+          Panel de control que muestra estadisticas de ventas en tiempo real con graficos interactivos.
         </p>
         <button type="button" id="btn-mas-info" aria-controls="texto-extra" aria-expanded="false">
           Más información
@@ -84,19 +93,40 @@
         <p class="tarjeta-tech"><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Git</p>
       </div>
 
-      <!-- 3. PARTE INFERIOR: Redes Sociales / Enlace -->
       <footer class="tarjeta-pie">
-        <a href="https://github.com/Andres56-Subdito/The-subnauticos-2" class="tarjeta-enlace" target="_blank">El GitHub</a>
+        <button id="btn-ver-mas-lucas" class="tarjeta-enlace btn-interactivo">➕ Ver mas</button>
+        <a href="#" class="tarjeta-enlace">Ver Proyecto</a>
+        <button id="btn-extra-lucas" class="tarjeta-enlace btn-interactivo">Botón</button>
+        <a href="#" class="tarjeta-enlace">Ver Proyecto</a>
+      </footer>
+    </article>
+
+    <!-- Tarjeta General del Grupo -->
+    <article class="tarjeta-proyecto">
+      <header class="tarjeta-cabecera">
+        <h2 class="tarjeta-titulo">The subnauticos 2</h2>
+      </header>
+      <div class="tarjeta-cuerpo">
+        <img src="https://preview.redd.it/new-alterra-logo-v0-qebrs8ztsxbf1.png?width=1024&format=png&auto=webp&s=dec1cc5fd3fe43e7ef2c559e42cf32198d80565e" alt="Logo del equipo" class="tarjeta-imagen">
+        <p class="tarjeta-descripcion">
+          Este sitio web reune y presenta los proyectos de todos los integrantes de nuestro equipo. Fue construido de forma colaborativa utilizando Git y GitHub como parte del Laboratorio 1 de Programacion de Aplicaciones.
+        </p>
+        <p class="tarjeta-tech"><strong>Tecnologias usadas:</strong> HTML5, CSS3, JavaScript, Git, GitHub</p>
+      </div>
+      <footer class="tarjeta-pie">
+        <a href="https://github.com/Andres56-Subdito/The-subnauticos-2" class="tarjeta-enlace" target="_blank">Ver en GitHub</a>
       </footer>
     </article>
 
   </main>
 
-  <!-- Pie de página con números de contacto -->
+  <!-- Pie de pagina con numeros de contacto -->
   <footer class="pie-sitio">
     <p><strong>Contactos del Equipo:</strong></p>
-    <p>Mario Yañez: +56 9 1234 5678 | Dilan Hernandez: +56 9 8765 4321 | Lucas Campos: +56 9 1122 3344</p>
+    <p>Mario Yanez: +56 9 1234 5678 | Dilan Hernandez: +56 9 8765 4321 | Lucas Campos: +56 9 1122 3344</p>
   </footer>
 
+  <!-- JavaScript del sitio (Laboratorio 3) -->
+  <script src="script.js" defer></script>
 </body>
 </html>
